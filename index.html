@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Online Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="whiteboard-container">
+        <header>
+            <h2>Interactive Online Whiteboard</h2>
+            <div class="toolbar">
+                <button id="penButton" class="tool">Pen</button>
+                <button id="eraserButton" class="tool">Eraser</button>
+                <input type="color" id="colorPicker" class="tool" value="#000000">
+                <input type="range" id="brushSize" min="1" max="20" value="5" class="tool">
+                <button id="clearButton" class="tool clear-btn">Clear</button>
+            </div>
+        </header>
+        <canvas id="whiteboard"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
